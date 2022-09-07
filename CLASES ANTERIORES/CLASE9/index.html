@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    p>strong{
+        color: red;
+    }
+    div>img{
+        width: 300px;
+    }
+    div{
+        font-size: 15px;
+    }
+    div.div1{
+        color: brown;
+    }
+    /*hermano adyacente tag + tag*/
+    h1 + p{
+    font-weight: bolder;
+    }
+    /*Hermano general*/
+    h2 ~ p{
+        height: 30px;
+        background-color: aqua;
+    }
+    /*pseudo clases*/
+    a:visited{
+        color: pink;
+    }
+    a:active{
+        color: green;
+    }
+    h1:hover{
+        color: red;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    img:hover{
+        width: 310px;
+        border: solid 5px yellow;
+    }
+    input:checked{
+        margin: 10px;        
+    }
+    div.primerHijo {
+        text-align: center;
+    }
+    div.primerHijo p{
+        display: inline;.
+    }
+    /*first child*/
+    div.primerHijo p:first-child{
+    color: blueviolet;
+    font-size: 20px;
+    font-weight: bolder;
+    }
+
+    /*last child*/
+    div.primerHijo p:last-child{
+        font-size: 20px;
+        font-weight: bolder;
+        color: burlywood;
+    }
+    /*NTH*/
+
+    /*impares*/
+ol li:nth-child(odd){
+    color: wheat; !important
+}
+    /*pares*/
+ol li:nth-child(even){
+    color: blue;
+}
+table{
+    border: 2px solid blue;
+    border-spacing: 0px;
+    width: 500px;
+    text-align: center;
+    padding: 5px;
+}
+table tr{
+    height: 30px;
+
+}
+table tr:first-child{
+    background-color: aqua;
+    text-transform: uppercase;
+}
+table tr:nth-child(2n+3){
+    background-color: red;
+}
+table tr:nth-child(2n){
+    background-color: rgb(151, 165, 42);
+}
+table tr:hover{
+    font-size: 1.2rem;
+    font-weight: bolder;
+    color: bisque;
+}
+
+</style>
+
+</head>
+<body>
+    <!--Hermanos-->
+    
+        <p>Lucas</p>
+        <p>Julio</p>
+
+    <!--P es hijo de Div-->
+        <div>
+            <p>P Hijo de div</p>
+        </div>
+    
+        <!--Hermanos-->
+
+        <section>
+            <h2>Los Hermanos</h2>
+            <p>Lucas</p> <!--Hermano adyacente de H2, es el primero-->
+            <p>Julio</p> <!--es hermano de H2, pero no adyacente-->
+            <p>Hernán</p>
+            <p>Lucas</p><!--es el último-->
+
+        </section>
+
+
+
+
+    <p>
+        Selector de hijos <strong>PADRE > HIJO</strong>
+    </p>
+    <P>
+        Texto <strong> Texto Strong</strong> sigue el texto
+    </P>
+    <div class="div1">
+        <img src="Homer_Simpson.webp" alt="">
+        <p>Párrafo</p>
+        <p>Párrafo</p>
+    </div>
+
+    <!--Hermanos adyacentes-->
+    <div>
+        <h1>Hermanos Adyacentes</h1>
+        <p>
+            Texto 1
+        </p>
+        <p>
+            Texto 2
+        </p>
+        <p>
+            Texto 3
+        </p>
+    </div>
+    <!--Hermanos generales-->
+
+    <div>
+        <h2>Hermanos Adyacentes</h2>
+        <p>
+            Hermano 1 de h2
+        </p>
+        <p>
+            Hermano 2 de h2
+        </p>
+        <p>
+            Hermano 3 de h2
+        </p>
+    </div>
+    <!--Selector de atribute en clase 7-->
+
+    <!--pseudoclases-->
+
+    <ul>
+        <li>
+            <a href="http://www.google.com.ar">Google</a>
+        </li>
+        <li>
+            <a href="http://www.facebook.com">Facebook</a>
+        </li>
+    </ul>
+    <input type="checkbox">
+<!--First child-->
+
+    <div class="primerHijo">
+        <p>
+            P1
+        </p>
+        <p>
+            P2
+        </p>
+        <p>
+            P3
+        </p>
+        <p>
+            P4
+        </p>
+    </div>
+
+    <ol>
+        <li>Primero</li>
+        <li>Segundo</li>
+        <li>Tercero</li>
+        <li>Cuarto</li>
+        <li>Quinto</li>
+        <li>Sexto</li>
+        <li>Séptimo</li>
+        <li>Octavo</li>
+        <li>Noveno</li>
+    </ol>
+    <table>
+        <tr>
+           <th>Uno</th>
+           <th>Dos</th>
+           <th>Tres</th>
+        </tr>
+        <tr>            
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+        </tr>
+    </table>
+    
+</body>
+</html>
