@@ -1,0 +1,17 @@
+h4{
+    color: gray;
+    font-size: 2rem;
+    border: 1px solid black;
+}
+.parrafo{
+    color: cornflowerblue;
+    font-weight: bolder;
+}
+/*clase*/
+.nombre{
+
+}
+/* por ID */
+#btn{
+    background-color: yellowgreen;
+}

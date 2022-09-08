@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 6</title>
+    <!--Forma de usar CSS-->    
+    <style>
+        /*Forma de comentar en CSS*/ 
+        p{
+            color: darkorchid;
+        } 
+        h2, h3{
+            color: rgb(10, 48, 216);
+        }  
+        /*estructura*/
+        selector{
+            propiedad: valor;
+        }
+        section{
+            background-color: brown;
+        }
+        
+    </style>
+    <!--3 forma: EXTERNA-->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+         <section style="background-color: aqua;">   <!--Aplicar estilos en línea, usando el atributo "STYLE"-->
+            <h1 style="color:red;">CSS</h1>
+            <h2>Subtítulo</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nulla sint, voluptatibus magni praesentium cumque suscipit quo, non possimus alias quod, velit molestias pariatur distinctio reprehenderit. Totam neque consequuntur dolores!</p>   
+            <h3>Hola</h3>
+            <h4>Soy un Subtítulo H4</h4>
+            <p class="parrafo">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet vero officiis iste quibusdam tenetur! Necessitatibus illo velit facere eaque, asperiores ipsum odio, aliquid, quo cumque rem id nemo repellendus quod?
+            </p>
+        </section>
+        <section style="background-color: red;">
+            <h5>Hola</h5>
+        </section>
+        <section>
+            <form action="alta.html">
+                <label for="nombre">Nombre:</label>
+                <input id="nombre" name="nombre"  type="text" maxlength="50" required>
+            <button id="btn">Enviar</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
